@@ -8,7 +8,7 @@ pipeline {
     }
     stage('test') {
       steps {
-        sh ' python -m pytest --junitxml=reports/report2.xml'
+        sh '. /tmp/venv/bin/activate && python -m pytest --junitxml=reports/report2.xml'
       }
       post {
         always {
