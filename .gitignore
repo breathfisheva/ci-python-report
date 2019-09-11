@@ -1,0 +1,7 @@
+#ignore thses files
+.idea
+.pytest_cache
+.project
+.settings
+.DS_Store
+__pycache__
