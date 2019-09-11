@@ -8,7 +8,7 @@ pipeline {
     }
     stage('test') {
       steps {
-        sh ' pytest test.py --junit-xml=reports/report.xml'
+        sh 'python test.py'
       }
       post {
         always {
